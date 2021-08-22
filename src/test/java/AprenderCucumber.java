@@ -127,41 +127,35 @@ public class AprenderCucumber {
 //	******************Desafio
 	
 
+//---inicio Cenário: Deve criar steps genéricos para estes passos
 @Dado("^que o ticket é AF(\\d+)$")
 public void queOTicketÉAF(int arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Dado("^que o valor da passagem é R\\$ (\\d+),(\\d+)$")
 public void queOValorDaPassagemÉR$(int arg1, int arg2) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
-@Dado("^que o nome do passageiro é \"([^\"]*)\"$")
+@Dado("^que o nome do passageiro é \"(.*)\"$")
 public void queONomeDoPassageiroÉ(String arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Dado("^que o telefone do passageiro é (\\d+)-(\\d+)$")
 public void queOTelefoneDoPassageiroÉ(int arg1, int arg2) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Quando("^criar os steps$")
 public void criarOsSteps() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Então("^o teste vai funcionar$")
 public void oTesteVaiFuncionar() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
+
+//final Cenário: Deve criar steps genéricos para estes passos
+
+
+/*
 
 @Dado("^que o ticket é AB(\\d+)$")
 public void queOTicketÉAB(int arg1) throws Throwable {
@@ -192,5 +186,5 @@ public void queOValorDaPassagemÉR$(int arg1, int arg2, int arg3) throws Throwab
     // Write code here that turns the phrase above into concrete actions
     throw new PendingException();
 }
-
+*/
 }// class
