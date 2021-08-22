@@ -9,6 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/features/aprender_cucumber.feature", //path
 		glue = "br.com.cucumbercurso.steps", // pacote
+		tags= "~@ignore",
 		plugin = "pretty", //// Melhor exibição das mensagens do console
 		monochrome = true, // Melhor exibição das mensagens do console
 		snippets = SnippetType.CAMELCASE, //Define os passos em camel case 
