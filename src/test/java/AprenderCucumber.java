@@ -127,9 +127,9 @@ public class AprenderCucumber {
 //	******************Desafio
 	
 
-//---inicio Cenário: Deve criar steps genéricos para estes passos
-@Dado("^que o ticket é AF(\\d+)$")
-public void queOTicketÉAF(int arg1) throws Throwable {
+//CENARIO 1
+@Dado("^que o ticket( especial)? é A.(\\d+)$")
+public void queOTicketÉAF(String tipo,int arg1) throws Throwable {
 }
 
 @Dado("^que o valor da passagem é R\\$ (\\d+),(\\d+)$")
@@ -152,39 +152,12 @@ public void criarOsSteps() throws Throwable {
 public void oTesteVaiFuncionar() throws Throwable {
 }
 
-//final Cenário: Deve criar steps genéricos para estes passos
 
 
-/*
+//CENARIO 2
 
-@Dado("^que o ticket é AB(\\d+)$")
-public void queOTicketÉAB(int arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
 
-@Dado("^que o ticket especial é AB(\\d+)$")
-public void queOTicketEspecialÉAB(int arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
 
-@Dado("^que o ticket é CD(\\d+)$")
-public void queOTicketÉCD(int arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
 
-@Dado("^que o ticket é AG(\\d+)$")
-public void queOTicketÉAG(int arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
 
-@Dado("^que o valor da passagem é R\\$ (\\d+)\\.(\\d+),(\\d+)$")
-public void queOValorDaPassagemÉR$(int arg1, int arg2, int arg3) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-*/
 }// class
