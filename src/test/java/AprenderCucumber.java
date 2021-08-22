@@ -121,7 +121,7 @@ public class AprenderCucumber {
 		
 	}
 	
-//	******************Desafio
+//	******************DESAFIO******************
 	
 
 //CENARIO 1
@@ -129,8 +129,9 @@ public class AprenderCucumber {
 public void queOTicketÉAF(String tipo, String arg1) throws Throwable {
 }
 
-@Dado("^que o valor da passagem é R\\$ (\\d+),(\\d+)$")
-public void queOValorDaPassagemÉR$(int arg1, int arg2) throws Throwable {
+@Dado("^que o valor da passagem é R\\$ (.*)$")
+public void queOValorDaPassagemÉR$(Double numero) throws Throwable {
+	//System.out.println("Numero === "+numero);//teste saida
 }
 
 @Dado("^que o nome do passageiro é \"(.{5,20})\"$")
