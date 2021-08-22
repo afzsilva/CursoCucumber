@@ -1,4 +1,5 @@
-import cucumber.api.PendingException;
+import org.junit.Assert;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -42,9 +43,11 @@ public class AprenderCucumber {
 	@Então("^o valor do contador é (\\d+)$")
 	public void oValorDoContadorÉ(int arg1) throws Throwable {	    
 		//this.contador = arg1;
-		System.out.println(arg1);
-		System.out.println(contador);
-		System.out.println(contador == arg1);
+//		System.out.println(arg1);
+//		System.out.println(contador);
+//		System.out.println(contador == arg1);
+		Assert.assertTrue(contador == arg1);
+		//throw new RuntimeException();
 		
 	}
 	

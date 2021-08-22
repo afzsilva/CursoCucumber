@@ -11,5 +11,5 @@ Cenario: Deve executar uma especificação
 	
 Cenario: Deve incremnetar um contador
 	Dado que o valor do contador é 15
-	Quando quando eu incrementar em 5
+	Quando quando eu incrementar em 3
 	Então o valor do contador é 18
