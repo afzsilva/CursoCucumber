@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.junit.Assert;
 
+import cucumber.api.Transform;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -60,13 +61,10 @@ public class AprenderCucumber {
 
 	Date entrega = new Date();
 
-	@Dado("^que a entrega é dia (\\d+)/(\\d+)/(\\d+)$")
-	public void queAEntregaÉDia(int dia, int mes, int ano) throws Throwable {
-		Calendar cal = Calendar.getInstance();
-		cal.set(Calendar.DAY_OF_MONTH, dia);
-		cal.set(Calendar.MONTH, mes - 1);
-		cal.set(Calendar.YEAR, ano);
-		entrega = cal.getTime();
+	@Dado("^que a entrega é dia (.*)")
+	public void queAEntregaÉDia(@Transform(DateConverter.class) Date data) throws Throwable {
+		this.entrega = data;
+		//System.out.println(" >>> "+ entrega);//teste saida
 	}
 
 	@Quando("^quando a entrega atrasar em (\\d+) dias$")
