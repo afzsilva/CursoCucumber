@@ -9,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 		plugin = "pretty", //// Melhor exibição das mensagens do console
 		monochrome = true, // Melhor exibição das mensagens do console
 		snippets = SnippetType.CAMELCASE, //Define os passos em camel case 
-		dryRun = false, //
-		strict = false
+		dryRun = false,// false:default e true para apenas validar o mapeamento sem executar os testes 
+		strict = false // uma forma de monitorar os passos default false se true ele monitora se algum metodo falta implementar
 		)
 public class Runner {
 

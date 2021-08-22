@@ -7,6 +7,7 @@ public class AprenderCucumber {
 
 	@Given("^que criei o arquivo corretamente$")
 	public void queCrieiOArquivoCorretamente() throws Throwable {
+		System.out.println("Faça alguma coisa");
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 	}
