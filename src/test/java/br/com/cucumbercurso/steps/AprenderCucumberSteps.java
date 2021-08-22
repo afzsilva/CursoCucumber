@@ -1,3 +1,4 @@
+package br.com.cucumbercurso.steps;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -5,6 +6,7 @@ import java.util.Date;
 
 import org.junit.Assert;
 
+import br.com.cucumbercurso.converters.DateConverter;
 import cucumber.api.Transform;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,7 +15,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
-public class AprenderCucumber {
+public class AprenderCucumberSteps {
 
 	@Given("^que criei o arquivo corretamente$")
 	public void queCrieiOArquivoCorretamente() throws Throwable {
